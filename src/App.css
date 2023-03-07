@@ -1,38 +1,152 @@
+li {
+  list-style: none;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 2rem;
+  background-color: black;
+}
+
+.App > h1 {
+  align-self: center;
+  font-size: 48px;
   color: white;
+  text-shadow: 1px 1px 5px black;
 }
 
-.App-link {
-  color: #61dafb;
+.searchContainer {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchContainer > input {
+  border: none;
+  border-bottom: 1px solid #E4e4e4;
+  font-size: 51px;
+  text-align: center;
+  font-weight: bold;
+  color: #eeb64f;
+  background-color: #000000;
+}
+
+
+.searchContainer > input:focus-visible {
+  outline: none;
+}
+
+.searchContainer > button {
+  justify-self: center;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 1rem / 1rem;
+  font-weight: bold;
+  margin-left: 2rem;
+  font-size: 18px;
+  padding: 1rem;
+}
+
+.searchContainer > button:hover {
+  background-color: rgb(165, 161, 161);
+}
+
+.loading {
+  color: white;
+  align-self: center;
+  font-size: 22px;
+}
+
+.Checkbox{
+  padding: 1rem;
+  border: 1px solid white;
+  max-width: 99%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.Checkbox > ul > li {
+  padding: 1rem;
+  color: white;
+  text-shadow: 1px 1px 5px black;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.Checkbox > ul {
+  columns: 4 auto;
+}
+
+.News {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+}
+
+.News > div > h1 {
+  text-align: center;
+  color: white;
+  text-decoration-line: underline;
+  text-shadow: 1px 1px 5px black;
+}
+
+.newsContainer {
+  border: 2px solid rgb(129, 129, 129);
+  max-width: 30rem;
+  margin: 3rem;
+  padding: 1rem;
+  background-color: rgb(17, 17, 17);
+  padding: 2rem;
+  border-radius: 2rem / 2rem;
+}
+
+.newsContainer > div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.newsContainer > div > p{
+  color: white;
+  font-size: 18px;
+}
+
+.newsContainer > div > a {
+  color: rgb(23, 139, 216);
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.newsContainer > div > a:hover {
+  color: rgba(23, 139, 216, 0.452);
+}
+
+
+.divider {
+  height: 0;
+  border: 1px solid rgb(129, 129, 129);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.instructions {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  align-self: center;
+  color: white;
+  font-size: 32px;
+}
+
+.disclaimer{
+ color: gray;
+ margin-top: 3rem;
+ text-align: center;
 }
