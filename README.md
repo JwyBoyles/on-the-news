@@ -1,4 +1,9 @@
 
+The API key for this website is currently broken and will not make a search if the user is accessing it from the web. If you would like to use the site please, download the files and run the app locally.
+
+I apologize for the inconvenience and am working on a solution.
+
+
 In The News is a website where users can make searches and get side by side comparisons on how different news organizations are covering the topic.
 
 It was made using React and an API from newsapi.org. It's a fairly simple design. Upon opening the page users see 4 things: the title, a search field, a list of news organizations, and how many organizations they can pick. This is done to make the website easy to use for anyone regardless of technical proficiency or navigation skills. After defining what they want to search and where they want the news from, the users click on the search button which cause the API to fire and get the news from the websites. The response is then sorted into an array for each news organization. The arrays are then put into the DOM, where the user can scroll and see the stories that have been published. The information given back to the user are headlines, which contain links to the stories, and a short description of the story that is being covered.

@@ -120,6 +120,13 @@ function newSearch(){
 
   return (
     <div className="App">
+      <div className='errorMessage'>
+      <p>
+      The API key for this website is currently broken and will not make a search if the user is accessing it from the web. 
+      If you would like to use the site please visit it at https://github.com/JwyBoyles/on-the-news, download the files and run the app locally. 
+      </p>
+      <p>I apologize for the inconvenience and am working on a solution. </p>
+      </div>
       <h1>In The News:</h1>
       <div className='searchContainer'>
         <input type="text"
@@ -140,7 +147,7 @@ function newSearch(){
         headlines={headlines}
         sourceList={sourceList}
         />}
-    <div className='disclaimer'>This website is just a tool to gather stories. The websites chosen were due to popularity and access, not the creator's views.
+    <div className='disclaimer'>This website is just a tool to gather stories. The websites were chosen due to popularity and access, not the creator's views.
     The creator of this website does not endorse any statements that are made in the articles found from this site, 
     nor can he guarantee the veracity or accuray of any stories linked</div>
     </div>

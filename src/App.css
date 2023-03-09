@@ -2,6 +2,12 @@ li {
   list-style: none;
 }
 
+.errorMessage {
+  background-color: white;
+  padding: 1rem;
+  font-size: 18px;
+}
+
 .App {
   min-height: 100vw;
   display: flex;
