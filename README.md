@@ -1,70 +1,10 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In The News is a website where users can make searches and get side by side comparisons on how different news organizations are covering the topic.
 
-## Available Scripts
+It was made using React and an API from newsapi.org. It's a fairly simple design. Upon opening the page users see 4 things: the title, a search field, a list of news organizations, and how many organizations they can pick. This is done to make the website easy to use for anyone regardless of technical proficiency or navigation skills. After defining what they want to search and where they want the news from, the users click on the search button which cause the API to fire and get the news from the websites. The response is then sorted into an array for each news organization. The arrays are then put into the DOM, where the user can scroll and see the stories that have been published. The information given back to the user are headlines, which contain links to the stories, and a short description of the story that is being covered.
 
-In the project directory, you can run:
+The website can be found at https://in-the-news.vercel.app/
 
-### `npm start`
+To run In The News on your own machine download the files and enter npm start in the project directory. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project was inspired from the common complaint of news organizations either not covering a topic or covering a topic badly. Hearing this complaint I wanted to make a site that can retrive the news from various sites and then put that news next to each other so the user can see for themselves how different publications are covering the same stories. I think that this website achieves that to a degree. It does what I want it to do but the API is missing some very popular news organizations and sometimes the quality of the response I get from the API are low. To guarantee better coverage and a wider variety of sources, one would need to use more than one API and would need to upgrade to paid APIs.
